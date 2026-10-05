@@ -1,0 +1,11 @@
+.blumoo-chapters { display: grid; grid-template-columns: minmax(0, 2fr) minmax(15rem, 1fr); gap: 1rem; margin-block: 2rem; }
+.blumoo-chapters video { width: 100%; max-height: 32rem; background: #121b2a; }
+.blumoo-chapters nav { max-height: 32rem; overflow: auto; border: 1px solid #c7cdd6; border-radius: .5rem; background: #fff; }
+.blumoo-chapters ol { list-style: none; padding: .5rem; margin: 0; }
+.blumoo-chapters button { display: block; width: 100%; padding: .85rem; border: 0; border-radius: .25rem; text-align: left; background: #fff; color: #17243b; font: inherit; cursor: pointer; }
+.blumoo-chapters button span { font-variant-numeric: tabular-nums; font-weight: 700; margin-inline-end: .5rem; }
+.blumoo-chapters button:hover, .blumoo-chapters button[aria-current] { background: #e5edf9; }
+.blumoo-chapters button:focus-visible { outline: 3px solid #174eaa; outline-offset: -3px; }
+.blumoo-chapters button:disabled { color: #596273; cursor: default; }
+.blumoo-chapters .blumoo-status { grid-column: 1 / -1; margin: 0; }
+@media (max-width: 48rem) { .blumoo-chapters { grid-template-columns: minmax(0, 1fr); } .blumoo-chapters nav { max-height: 20rem; } }
